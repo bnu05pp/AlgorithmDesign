@@ -101,7 +101,8 @@
 
 ### 编程实践：Leetcode截屏考核说明
 
-LEETCODE截图示例 ![截图示例](./resources/leetcode.jpg)
+LEETCODE截图示例
+![截图示例](./resources/leetcode.jpg)
 
 每周五8:00到24:00，将自己Leetcode截屏发给我学生邮箱3318965636@qq.com，邮件标题格式为“Leetcode截屏-[姓名]-[学号]-[日期]”；
 
@@ -140,4 +141,10 @@ LEETCODE截图示例 ![截图示例](./resources/leetcode.jpg)
 
 ## 特色资源
 
+电子版题集：https://www.matiji.net/exam/baiduzhixing
+
 ## 其他资源
+
+1、题集图书：《百度之星题集2005-2021年》，清华大学出版社2022年版http://www.tup.tsinghua.edu.cn/bookscenter/book_09491901.html
+
+2、教材课后题答案：https://walkccc.me/CLRS/
