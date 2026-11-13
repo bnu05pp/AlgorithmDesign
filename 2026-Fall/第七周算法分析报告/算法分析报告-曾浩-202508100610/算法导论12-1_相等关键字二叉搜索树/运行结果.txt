@@ -1,0 +1,47 @@
+> equal_keys_bst.exe 1
+CLRS 12-1: inserting 1 equal keys, seed=20261019
+a standard equality-goes-right: items=1, tree_nodes=1, height=1, insertion_node_visits=0
+b alternating left/right: items=1, tree_nodes=1, height=1, insertion_node_visits=0
+c one node plus duplicate list: items=1, tree_nodes=1, height=1, insertion_node_visits=0
+d random left/right: items=1, tree_nodes=1, height=1, insertion_node_visits=0
+Random strategy: one run is not its expectation.
+
+> equal_keys_bst.exe 2
+CLRS 12-1: inserting 2 equal keys, seed=20261019
+a standard equality-goes-right: items=2, tree_nodes=2, height=2, insertion_node_visits=1
+b alternating left/right: items=2, tree_nodes=2, height=2, insertion_node_visits=1
+c one node plus duplicate list: items=2, tree_nodes=1, height=1, insertion_node_visits=1
+d random left/right: items=2, tree_nodes=2, height=2, insertion_node_visits=1
+Random strategy: one run is not its expectation.
+
+> equal_keys_bst.exe 127 20261019
+CLRS 12-1: inserting 127 equal keys, seed=20261019
+a standard equality-goes-right: items=127, tree_nodes=127, height=127, insertion_node_visits=8001
+b alternating left/right: items=127, tree_nodes=127, height=7, insertion_node_visits=642
+c one node plus duplicate list: items=127, tree_nodes=1, height=1, insertion_node_visits=126
+d random left/right: items=127, tree_nodes=127, height=11, insertion_node_visits=684
+Random strategy: one run is not its expectation.
+
+> equal_keys_bst.exe 2000 20261019
+CLRS 12-1: inserting 2000 equal keys, seed=20261019
+a standard equality-goes-right: items=2000, tree_nodes=2000, height=2000, insertion_node_visits=1999000
+b alternating left/right: items=2000, tree_nodes=2000, height=11, insertion_node_visits=17964
+c one node plus duplicate list: items=2000, tree_nodes=1, height=1, insertion_node_visits=1999
+d random left/right: items=2000, tree_nodes=2000, height=14, insertion_node_visits=18484
+Random strategy: one run is not its expectation.
+
+> equal_keys_bst.exe 127 1
+CLRS 12-1: inserting 127 equal keys, seed=1
+a standard equality-goes-right: items=127, tree_nodes=127, height=127, insertion_node_visits=8001
+b alternating left/right: items=127, tree_nodes=127, height=7, insertion_node_visits=642
+c one node plus duplicate list: items=127, tree_nodes=1, height=1, insertion_node_visits=126
+d random left/right: items=127, tree_nodes=127, height=10, insertion_node_visits=676
+Random strategy: one run is not its expectation.
+
+> equal_keys_bst.exe 127 2
+CLRS 12-1: inserting 127 equal keys, seed=2
+a standard equality-goes-right: items=127, tree_nodes=127, height=127, insertion_node_visits=8001
+b alternating left/right: items=127, tree_nodes=127, height=7, insertion_node_visits=642
+c one node plus duplicate list: items=127, tree_nodes=1, height=1, insertion_node_visits=126
+d random left/right: items=127, tree_nodes=127, height=9, insertion_node_visits=674
+Random strategy: one run is not its expectation.
