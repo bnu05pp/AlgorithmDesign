@@ -1,0 +1,75 @@
+> parameter_passing.exe 2
+CLRS 4-2 parameter passing, N=2
+All three versions of each algorithm produced identical correct results.
+Parameter copies count A, B and C; result copy-back is reported separately.
+Matrix test verifies C_final = C_initial + A*B with nonzero C_initial.
+
+Binary search (absent key):
+  pointer: calls=3, parameter_elements_copied=0
+  full copy: calls=3, parameter_elements_copied=6
+  subrange copy: calls=3, parameter_elements_copied=1
+Merge sort (reverse input):
+  pointer: calls=3, parameter_elements_copied=0
+  full copy: calls=3, parameter_elements_copied=6
+  subrange copy: calls=3, parameter_elements_copied=2
+Recursive matrix multiplication:
+  pointer: calls=9, parameter_elements_copied=0, scalar_multiplications=8, result_elements_copied_back=0
+  full copy: calls=9, parameter_elements_copied=108, scalar_multiplications=8, result_elements_copied_back=12
+  submatrix copy: calls=9, parameter_elements_copied=36, scalar_multiplications=8, result_elements_copied_back=12
+
+> parameter_passing.exe 4
+CLRS 4-2 parameter passing, N=4
+All three versions of each algorithm produced identical correct results.
+Parameter copies count A, B and C; result copy-back is reported separately.
+Matrix test verifies C_final = C_initial + A*B with nonzero C_initial.
+
+Binary search (absent key):
+  pointer: calls=4, parameter_elements_copied=0
+  full copy: calls=4, parameter_elements_copied=16
+  subrange copy: calls=4, parameter_elements_copied=3
+Merge sort (reverse input):
+  pointer: calls=7, parameter_elements_copied=0
+  full copy: calls=7, parameter_elements_copied=28
+  subrange copy: calls=7, parameter_elements_copied=8
+Recursive matrix multiplication:
+  pointer: calls=73, parameter_elements_copied=0, scalar_multiplications=64, result_elements_copied_back=0
+  full copy: calls=73, parameter_elements_copied=3504, scalar_multiplications=64, result_elements_copied_back=112
+  submatrix copy: calls=73, parameter_elements_copied=336, scalar_multiplications=64, result_elements_copied_back=112
+
+> parameter_passing.exe 8
+CLRS 4-2 parameter passing, N=8
+All three versions of each algorithm produced identical correct results.
+Parameter copies count A, B and C; result copy-back is reported separately.
+Matrix test verifies C_final = C_initial + A*B with nonzero C_initial.
+
+Binary search (absent key):
+  pointer: calls=5, parameter_elements_copied=0
+  full copy: calls=5, parameter_elements_copied=40
+  subrange copy: calls=5, parameter_elements_copied=7
+Merge sort (reverse input):
+  pointer: calls=15, parameter_elements_copied=0
+  full copy: calls=15, parameter_elements_copied=120
+  subrange copy: calls=15, parameter_elements_copied=24
+Recursive matrix multiplication:
+  pointer: calls=585, parameter_elements_copied=0, scalar_multiplications=512, result_elements_copied_back=0
+  full copy: calls=585, parameter_elements_copied=112320, scalar_multiplications=512, result_elements_copied_back=960
+  submatrix copy: calls=585, parameter_elements_copied=2880, scalar_multiplications=512, result_elements_copied_back=960
+
+> parameter_passing.exe 16
+CLRS 4-2 parameter passing, N=16
+All three versions of each algorithm produced identical correct results.
+Parameter copies count A, B and C; result copy-back is reported separately.
+Matrix test verifies C_final = C_initial + A*B with nonzero C_initial.
+
+Binary search (absent key):
+  pointer: calls=6, parameter_elements_copied=0
+  full copy: calls=6, parameter_elements_copied=96
+  subrange copy: calls=6, parameter_elements_copied=15
+Merge sort (reverse input):
+  pointer: calls=31, parameter_elements_copied=0
+  full copy: calls=31, parameter_elements_copied=496
+  subrange copy: calls=31, parameter_elements_copied=64
+Recursive matrix multiplication:
+  pointer: calls=4681, parameter_elements_copied=0, scalar_multiplications=4096, result_elements_copied_back=0
+  full copy: calls=4681, parameter_elements_copied=3595008, scalar_multiplications=4096, result_elements_copied_back=7936
+  submatrix copy: calls=4681, parameter_elements_copied=23808, scalar_multiplications=4096, result_elements_copied_back=7936
